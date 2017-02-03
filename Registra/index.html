@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Registration</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <center>
+    
+    <header>Registration</header>
+    <br>
+<div ng-controller="ctrl">
+    <input type="text" ng-model="f" placeholder="Firstname">
+    <input type="text" ng-model="l" placeholder="Lastname">
+    <input type="text" ng-model="m" placeholder="Middle Initial">
+    <input type="text" ng-model="dob" placeholder="Date of Birth">
+    <input type="text" ng-model="g" placeholder="Gender">
+
+    <td>
+
+    <button ng-click="insert()">Register</button><br>
+    <br><button ng-click="getsData()">View User</button>
+    <br>
+
+    <table border="1">
+         <br>
+      <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Middle Initial</th>
+    <th>Date of Birth</th>
+    <th>Gender</th>
+  </tr>
+  <tr ng-repeat="a in b track by $index">
+        <td>
+        {{a.f}}
+        </td>
+        <td>
+        {{a.l}}
+        </td>
+        <td>
+        {{a.m}}
+        </td>
+        <td>
+        {{a.d}}
+        </td>
+        <td>
+        {{a.g}}
+        </td>
+       </tr>
+    </table>
+</div>
+
+<style>
+
+    table {
+        border-collapse: collapse;
+        width: 68%;
+    }
+
+    th {
+        background-color: #C9BE62;
+    }
+   header{
+    font-size: 30px;
+    padding-top: 70px;
+   }
+
+</style>
+    <footer>
+        Copyright &copy; 2017 - EML
+    </footer>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>"

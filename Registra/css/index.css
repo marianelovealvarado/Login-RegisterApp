@@ -1,0 +1,16 @@
+
+.inputs{
+    padding: 20px;
+    margin: 20px;
+}
+
+.inputs div{
+    margin-top: 20px;
+}
+
+.inputs div > input{
+    width: 60px;
+}
+table {
+	border-collapse: collapse;
+}
